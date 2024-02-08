@@ -6,7 +6,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: "Prompt", sans-serif;
+	font-family: "Protest Guerrilla", sans-serif;
 }
 
 .global {
@@ -19,25 +19,40 @@ body {
 .global > header,
 .global > footer {
 	flex: 0 1 900px;
-	border: 1px solid #aaa;
+	// border: 1px solid #aaa;
+	padding: 3rem 1rem;
+	// background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
+// Définition des largeurs
+.global > header {
+	min-width: var(--largeur-header);
+}
+.global > section {
+	min-width: var(--largeur-section);
+}
+.global > footer {
+	min-width: var(--largeur-footer);
+}
+
+#entete, #footer {
+	min-height: 20vh;
+}
+
+// Définition des background color
 #entete {
 	background-color: var(--couleur-arriere-entete);
 }
-
 #accueil {
 	background-color: var(--couleur-arriere-accueil);
 }
-
 #evenement {
 	background-color: var(--couleur-arriere-evenement);
 }
-
 #galerie {
 	background-color: var(--couleur-arriere-galerie);
 }
-
 #footer {
 	background-color: var(--couleur-arriere-footer);
 }
