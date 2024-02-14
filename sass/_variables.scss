@@ -11,11 +11,9 @@
 	--u3: calc(var(--u2) - 30); // couleur analogue gauche
 	--u4: calc(var(--u2) + 30); // couleur analogue droite
 
-	// Saturation
+	// Saturation et luminosité
 	--s-arriere: 100%;
 	--s-avant: 50%;
-
-	// Luminosité
 	--l-arriere: 30%;
 	--l-avant: 20%;
 
