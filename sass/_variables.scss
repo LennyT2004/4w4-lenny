@@ -1,20 +1,48 @@
 :root {
-	--couleur-arriere-entete: #e10b0b;
-    --couleur-arriere-accueil: #faff18;
-    --couleur-arriere-evenement: rgb(30 102 120);
-    --couleur-arriere-galerie: #ffffff;
-    --couleur-arriere-footer: #000;
+	// --couleur-arriere-entete: #e10b0b;
+    // --couleur-arriere-accueil: #faff18;
+    // --couleur-arriere-evenement: rgb(30 102 120);
+    // --couleur-arriere-galerie: #ffffff;
+    // --couleur-arriere-footer: #000;
 
-	// Niveau de transparence des h
-	--transparence-h1: 0.5;
-	--transparence-h2: 0.45;
-	--transparence-h3: 0.4;
-	--transparence-h4: 0.35;
-	--transparence-h5: 0.3;
-	--transparence-h6: 0.25;
+	// Calcul des teintes
+	--u1: 180; // couleur initiale
+	--u2: calc(var(--u1) + 180); // couleur complémentaire
+	--u3: calc(var(--u2) - 30); // couleur analogue gauche
+	--u4: calc(var(--u2) + 30); // couleur analogue droite
 
-	// Niveau de transparence des sections
-	--transparence-section: 0.1;
+	// Saturation
+	--s-arriere: 100%;
+	--s-avant: 50%;
+
+	// Luminosité
+	--l-arriere: 30%;
+	--l-avant: 20%;
+
+	// Couleur arrière plan - Background color
+	--couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+	// Couleur avant plan - Color
+	--couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+    --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+    --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+    --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+    --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+
+	// // Niveau de transparence des h
+	// --transparence-h1: 0.5;
+	// --transparence-h2: 0.45;
+	// --transparence-h3: 0.4;
+	// --transparence-h4: 0.35;
+	// --transparence-h5: 0.3;
+	// --transparence-h6: 0.25;
+
+	// // Niveau de transparence des sections
+	// --transparence-section: 0.1;
 
 	// Largeur des zones centrales
 	--largeur-header: 60vw;
