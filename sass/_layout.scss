@@ -40,6 +40,51 @@ body {
 	min-height: 20vh;
 }
 
+#evenement section p {
+	background-color: var(--couleur-arriere-accueil);
+	color: beige;
+	padding: 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 10px 5px 5px black;
+	font-size: 1.5rem;
+	font-style: italic;
+	margin-top: 2rem;
+}
+
+// Stylisation des liens dans l'entête
+.lien-section {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+	margin-right: 3rem;
+	font-size: 1.5rem;
+	// scroll-behavior: smooth;
+}
+.lien-section:hover {
+	color: rgb(0, 72, 72);
+	text-decoration: underline;
+}
+
+// Stylisation du bouton
+.bouton {
+	background-color: rgb(18, 182, 18);
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2rem;
+	padding: 1rem;
+	cursor: pointer;
+	margin-top: 2rem;
+}
+
+.bouton:active {
+	background-color: rgb(17, 119, 17);
+}
+
 // Définition des background color
 #entete {
 	background-color: var(--couleur-arriere-entete);
@@ -49,12 +94,11 @@ body {
 #accueil {
 	background-color: var(--couleur-arriere-accueil);
 	color: var(--couleur-accueil);
-	position: relative;
 }
 #evenement {
-	background-color: var(--couleur-arriere-evenement);
+	background-color: var(--couleur-arriere-accueil);
 	color: var(--couleur-evenement);
-	position: relative;
+	z-index: 1;
 }
 #galerie {
 	background-color: var(--couleur-arriere-galerie);

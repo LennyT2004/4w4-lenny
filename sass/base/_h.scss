@@ -4,36 +4,37 @@ h1 {
 	font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
 	font-weight: 600;
 	// color: rgba(255, 255, 255, 0.5);
-	color: rgba(188, 19, 146, var(--transparence-h1));
-	text-decoration: underline;
+	// color: rgba(188, 19, 146, var(--transparence-h1));
+	text-decoration: underline overline;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 h2 {
 	font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 	font-weight: 500;
-	color: rgba(90, 26, 74, var(--transparence-h2));
-	text-decoration: underline overline;
+	// color: rgba(90, 26, 74, var(--transparence-h2));
+	text-decoration: underline;
 }
 h3 {
 	font-size: clamp(1rem, -1.292rem + 7.333vw, 3rem);
 	font-weight: 400;
-	color: rgba(46, 153, 98, var(--transparence-h3));
+	// color: rgba(46, 153, 98, var(--transparence-h3));
 }
 
 h4 {
 	font-size: clamp(1rem, -1.292rem + 7.333vw, 2.5rem);
 	font-weight: 300;
-	color: rgba(74, 92, 179, var(--transparence-h4));
+	// color: rgba(74, 92, 179, var(--transparence-h4));
 }
 
 h5 {
 	font-size: clamp(1rem, -1.292rem + 7.333vw, 2rem);
 	font-weight: 200;
-	color: rgba(42, 69, 13, var(--transparence-h5));
+	// color: rgba(42, 69, 13, var(--transparence-h5));
 }
 
 h6 {
 	font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
 	font-weight: 100;
-	color: rgba(26, 136, 199, var(--transparence-h6));
+	// color: rgba(26, 136, 199, var(--transparence-h6));
 }
