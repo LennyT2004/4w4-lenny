@@ -70,8 +70,8 @@ body {
   min-width: var(--largeur-section);
 }
 
-#entete, #footer {
-  min-height: 20vh;
+section, footer {
+  min-height: 50vh;
 }
 
 section p,
@@ -128,6 +128,11 @@ footer p {
   background-position: 100% 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .entete_header {
+    background-position: 50% 50%;
+  }
+}
 .bouton {
   background-image: linear-gradient(90deg, var(--couleur-bouton-1), var(--couleur-bouton-2));
   color: white;
@@ -141,6 +146,7 @@ footer p {
   cursor: pointer;
   margin-top: 2rem;
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  transition: 0.1s ease-in-out;
 }
 
 .bouton:hover {

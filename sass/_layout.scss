@@ -37,9 +37,8 @@ body {
 // .global > footer {
 // 	min-width: var(--largeur-footer);
 // }
-
-#entete, #footer {
-	min-height: 20vh;
+section, footer {
+	min-height: 50vh;
 }
 
 section p,
