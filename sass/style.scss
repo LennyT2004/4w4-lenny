@@ -15,7 +15,13 @@ Text Domain: theme-lenny
 
 @import "layout";
 
+@import "entete";
+
+@import "base/bouton";
+
 @import "base/h";
+
+@import "base/liens";
 
 @import "effet/vague";
 

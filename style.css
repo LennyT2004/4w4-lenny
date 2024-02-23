@@ -28,6 +28,9 @@ Text Domain: theme-lenny
   --couleur-evenement: hsl(var(--u3), 100%, 35%);
   --couleur-galerie: hsl(var(--u3), 100%, 35%);
   --couleur-footer: hsl(var(--u3), 100%, 35%);
+  --couleur-bouton-1: rgb(32, 23, 124);
+  --couleur-bouton-2: rgb(87, 83, 124);
+  --couleur-bouton-3: rgb(113, 113, 118);
   --largeur-header: 90vw;
   --largeur-section: 75vw;
   --largeur-footer: 50vw;
@@ -53,21 +56,18 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   padding: 3rem 1rem;
   background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
 .global > header {
-  min-width: var(--largeur-header);
+  flex: 1;
 }
 
-.global > section {
-  min-width: var(--largeur-section);
-}
-
+.global > section,
 .global > footer {
-  min-width: var(--largeur-footer);
+  min-width: var(--largeur-section);
 }
 
 #entete, #footer {
@@ -83,38 +83,6 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   margin-top: 2rem;
-}
-
-.lien-section {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  transition: ease-in-out 0.5s;
-  margin-right: 3rem;
-  font-size: 1.5rem;
-}
-
-.lien-section:hover {
-  color: rgb(0, 72, 72);
-  text-decoration: underline;
-}
-
-.bouton {
-  background-color: rgb(18, 182, 18);
-  color: white;
-  border: none;
-  border-radius: 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-  margin-top: 2rem;
-}
-
-.bouton:active {
-  background-color: rgb(17, 119, 17);
 }
 
 #entete {
@@ -143,6 +111,43 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+@media screen and (max-width: 768px) {
+  .global > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.entete_header {
+  background-image: url("images/wordpress-theme.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.bouton {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-1), var(--couleur-bouton-2));
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+}
+
+.bouton:hover {
+  background-image: linear-gradient(90deg, var(--couleur-bouton-2), var(--couleur-bouton-3));
+}
+
+.bouton:active {
+  box-shadow: 10px 5px 5px var(--couleur-bouton-1);
 }
 
 h1 {
@@ -176,6 +181,24 @@ h5 {
 h6 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
   font-weight: 100;
+}
+
+span {
+  display: block;
+}
+
+.lien-section {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+}
+
+.lien-section:hover {
+  color: rgb(0, 72, 72);
+  text-decoration: underline;
 }
 
 .vague {

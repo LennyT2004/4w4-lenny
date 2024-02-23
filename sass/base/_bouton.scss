@@ -1,0 +1,22 @@
+.bouton {
+	background-image: linear-gradient(90deg, var(--couleur-bouton-1), var(--couleur-bouton-2));
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2rem;
+	padding: 1rem;
+	cursor: pointer;
+	margin-top: 2rem;
+	font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+}
+
+.bouton:hover {
+	background-image: linear-gradient(90deg, var(--couleur-bouton-2), var(--couleur-bouton-3));
+}
+
+.bouton:active {
+	box-shadow: 10px 5px 5px var(--couleur-bouton-1);
+}

@@ -1,0 +1,14 @@
+// Stylisation des liens dans l'entête
+.lien-section {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: ease-in-out 0.5s;
+	margin-right: 3rem;
+	font-size: 1.5rem;
+	// scroll-behavior: smooth;
+}
+.lien-section:hover {
+	color: rgb(0, 72, 72);
+	text-decoration: underline;
+}

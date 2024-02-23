@@ -18,7 +18,7 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-	flex: 0 1 900px;
+	flex: 0 1 1100px;
 	// border: 1px solid #aaa;
 	padding: 3rem 1rem;
 	// background-color: rgba(0, 0, 0, 0.1);
@@ -27,14 +27,16 @@ body {
 
 // Définition des largeurs
 .global > header {
-	min-width: var(--largeur-header);
+	// min-width: var(--largeur-header);
+	flex: 1;
 }
-.global > section {
+.global > section,
+.global > footer {
 	min-width: var(--largeur-section);
 }
-.global > footer {
-	min-width: var(--largeur-footer);
-}
+// .global > footer {
+// 	min-width: var(--largeur-footer);
+// }
 
 #entete, #footer {
 	min-height: 20vh;
@@ -49,40 +51,6 @@ body {
 	font-size: 1.5rem;
 	font-style: italic;
 	margin-top: 2rem;
-}
-
-// Stylisation des liens dans l'entête
-.lien-section {
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
-	transition: ease-in-out 0.5s;
-	margin-right: 3rem;
-	font-size: 1.5rem;
-	// scroll-behavior: smooth;
-}
-.lien-section:hover {
-	color: rgb(0, 72, 72);
-	text-decoration: underline;
-}
-
-// Stylisation du bouton
-.bouton {
-	background-color: rgb(18, 182, 18);
-	color: white;
-	border: none;
-	border-radius: 1rem;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 2rem;
-	padding: 1rem;
-	cursor: pointer;
-	margin-top: 2rem;
-}
-
-.bouton:active {
-	background-color: rgb(17, 119, 17);
 }
 
 // Définition des background color
@@ -108,4 +76,13 @@ body {
 #footer {
 	background-color: var(--couleur-arriere-footer);
 	color: var(--couleur-footer);
+}
+
+@media screen and (max-width: 768px) {
+	.global > header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
