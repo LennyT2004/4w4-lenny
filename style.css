@@ -74,7 +74,8 @@ body {
   min-height: 20vh;
 }
 
-#evenement section p {
+section p,
+footer p {
   background-color: var(--couleur-arriere-accueil);
   color: beige;
   padding: 2rem;
