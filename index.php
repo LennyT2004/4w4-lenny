@@ -34,17 +34,19 @@
 			<h2>Accueil (h2)</h2>
 			<div class="cours">
 				<?php
-				// if(have_posts()) {
-				// 	while(have_posts()){
-				// 		the_post();
-				// 		the_title('<h3>', '</h3>');
-				// 		echo wp_trim_words(get_the_content(), 30);
-				// 	}
-				// }
 				if (have_posts()) :
-					while (have_posts()) : the_post(); ?>
+
+					while (have_posts()) : the_post();
+						$titre = get_the_title();
+						$sigle = substr($titre, 0, 7);
+						$duree = substr($titre, -6, 6);
+						$titreCours = trim(substr($titre, 8, -5), $duree);
+						// strpos()
+				?>
 						<div class="carte">
-							<h3><?php the_title() ?></h3>
+							<p><?php echo $sigle; ?></p>
+							<h3><?php echo $titreCours; ?></h3>
+							<p><?php echo $duree; ?></p>
 							<p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
 						</div>
 					<?php endwhile; ?>

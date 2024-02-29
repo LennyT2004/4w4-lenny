@@ -16,25 +16,25 @@ h2 {
 	text-decoration: underline;
 }
 h3 {
-	font-size: clamp(1rem, -1.292rem + 7.333vw, 3rem);
+	font-size: clamp(1rem, -3rem + 7.333vw, 2rem);
 	font-weight: 400;
 	// color: rgba(46, 153, 98, var(--transparence-h3));
 }
 
 h4 {
-	font-size: clamp(1rem, -1.292rem + 7.333vw, 2.5rem);
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 2rem);
 	font-weight: 300;
 	// color: rgba(74, 92, 179, var(--transparence-h4));
 }
 
 h5 {
-	font-size: clamp(1rem, -1.292rem + 7.333vw, 2rem);
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
 	font-weight: 200;
 	// color: rgba(42, 69, 13, var(--transparence-h5));
 }
 
 h6 {
-	font-size: clamp(1rem, -1.292rem + 7.333vw, 1.5rem);
+	font-size: clamp(1rem, -1.292rem + 7.333vw, 1rem);
 	font-weight: 100;
 	// color: rgba(26, 136, 199, var(--transparence-h6));
 }
