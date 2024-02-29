@@ -33,6 +33,7 @@
 		<section>
 			<h2>Accueil (h2)</h2>
 			<div class="cours">
+				<!-- Séparation des composants du sigle, titre du cours et durée -->
 				<?php
 				if (have_posts()) :
 
@@ -41,7 +42,6 @@
 						$sigle = substr($titre, 0, 7);
 						$duree = substr($titre, -6, 6);
 						$titreCours = trim(substr($titre, 8, -5), $duree);
-						// strpos()
 				?>
 						<div class="carte">
 							<p><?php echo $sigle; ?></p>
