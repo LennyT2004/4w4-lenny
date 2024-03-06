@@ -12,8 +12,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
 
 <body>
+	<nav id="menu" class="global">
+		<header class="menu_header">
+			<?php wp_nav_menu(array("container" => "nav")); ?>
+		</header>
+	</nav>
 	<div id="entete" class="global">
-		<header class="entete_header">
+		<section class="entete_header">
 			<h1>Thème du groupe #1 (h1)</h1>
 			<h2>4W4 - Conception d'interface ry développement Web</h2>
 			<h3>TIM - Collège de Maisonneuve</h3>
@@ -22,7 +27,7 @@
 				<a href="#evenement" class="lien-section">Évènement</a>
 				<a href="#footer" class="lien-section">Footer</a>
 			</div>
-		</header>
+		</section>
 		<div class="vague">
 			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill: var(--couleur-arriere-accueil);"></path>
@@ -40,14 +45,17 @@
 					while (have_posts()) : the_post();
 						$titre = get_the_title();
 						$sigle = substr($titre, 0, 7);
-						$duree = substr($titre, -6, 6);
-						$titreCours = trim(substr($titre, 8, -5), $duree);
+						$pos_parenthese = strpos($titre, '(');
+						$duree = substr($titre, $pos_parenthese + 1, -1);
+						$titre = substr($titre, 7, $pos_parenthese - 7);
+						// $duree = substr($titre, -6, 6);
+						// $titreCours = trim(substr($titre, 8, -5), $duree);
 				?>
 						<div class="carte">
 							<p><?php echo $sigle; ?></p>
-							<h3><?php echo $titreCours; ?></h3>
-							<p><?php echo $duree; ?></p>
+							<h3><?php echo $titre; ?></h3>
 							<p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+							<p><?php echo $duree; ?></p>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>

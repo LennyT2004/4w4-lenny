@@ -17,14 +17,19 @@ Text Domain: theme-lenny
 
 @import "entete";
 
+// -------------------- Base --------------------
 @import "base/bouton";
 
 @import "base/h";
 
 @import "base/liens";
 
+// -------------------- Composants --------------------
 @import "composant/cours";
 
+@import "composant/menu";
+
+// -------------------- Effets --------------------
 @import "effet/vague";
 
 @import "effet/diagonale";

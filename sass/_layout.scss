@@ -12,7 +12,6 @@ body {
 .global {
 	display: flex;
 	justify-content: center;
-	min-height: 40vh;
 }
 
 .global > section,
@@ -26,7 +25,7 @@ body {
 }
 
 // Définition des largeurs
-.global > header {
+.global > .hero {
 	// min-width: var(--largeur-header);
 	flex: 1;
 }
@@ -43,12 +42,15 @@ section, footer {
 
 // Ajout d'un clamp pour le p
 p {
-	background-color: var(--couleur-arriere-accueil);
 	color: beige;
 	padding: 2rem;
 	font-size: clamp(1rem, 0.773rem + 0.606vw, 1.5rem);
 	font-style: italic;
 	margin-top: 2rem;
+}
+
+#menu {
+
 }
 
 // Définition des background color
@@ -76,11 +78,11 @@ p {
 	color: var(--couleur-footer);
 }
 
-@media screen and (max-width: 768px) {
-	.global > header {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-}
+// @media screen and (max-width: 768px) {
+// 	.global > header {
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: center;
+// 		align-items: center;
+// 	}
+// }

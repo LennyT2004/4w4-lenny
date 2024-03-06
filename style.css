@@ -36,6 +36,10 @@ Text Domain: theme-lenny
   --largeur-footer: 50vw;
 }
 
+.carte {
+  --_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +54,6 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
@@ -61,7 +64,7 @@ body {
   background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
 }
 
@@ -75,7 +78,6 @@ section, footer {
 }
 
 p {
-  background-color: var(--couleur-arriere-accueil);
   color: beige;
   padding: 2rem;
   font-size: clamp(1rem, 0.773rem + 0.606vw, 1.5rem);
@@ -111,14 +113,6 @@ p {
   color: var(--couleur-footer);
 }
 
-@media screen and (max-width: 768px) {
-  .global > header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .entete_header {
   background-image: url("images/wordpress-theme.png");
   background-repeat: no-repeat;
@@ -126,7 +120,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .entete_header {
+  .hero {
     background-position: 50% 50%;
   }
 }
@@ -214,11 +208,12 @@ span {
 
 .carte {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  flex: 0 1 20%;
-  border: 1px solid black;
-  width: 7.5rem;
+  justify-content: center;
+  flex: 1 0 225px;
+  border: 1px solid #aaa;
+  background-color: var(--_couleur-arriere);
+  padding: 1rem;
 }
 
 .carte p {
@@ -232,12 +227,23 @@ span {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
-  .carte {
-    width: 50%;
-    max-width: 9rem;
-  }
+.menu-principal-container {
+  background-color: black;
 }
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  flex: 1 0 50px;
+}
+
+.menu-item-a {
+  color: #fff;
+}
+
 .vague {
   position: absolute;
   bottom: 0;
