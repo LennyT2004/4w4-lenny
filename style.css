@@ -95,6 +95,7 @@ p {
 }
 
 #menu {
+  position: relative;
   background-color: var(--couleur-arriere-menu);
 }
 
@@ -241,16 +242,43 @@ span {
 }
 
 .menu {
-  display: flex;
-  list-style-type: none;
+  display: none;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
 }
 
 .menu-item {
   flex: 1 0 50px;
+  list-style-type: none;
 }
 
 .menu-item-a {
   color: black;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media (min-width: 768px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+#chk-burger:checked ~ .menu {
+  display: block;
 }
 
 .vague {
