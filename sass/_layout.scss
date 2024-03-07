@@ -25,10 +25,7 @@ body {
 }
 
 // Définition des largeurs
-.global > .hero {
-	// min-width: var(--largeur-header);
-	flex: 1;
-}
+.global > .menu_header
 .global > section,
 .global > footer {
 	min-width: var(--largeur-section);

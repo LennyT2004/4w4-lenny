@@ -16,7 +16,7 @@
 	<div id="entete" class="global">
 		<section class="entete_header">
 			<h1>Thème du groupe #1 (h1)</h1>
-			<h2>4W4 - Conception d'interface ry développement Web</h2>
+			<h2>4W4 - Conception d'interface et développement Web</h2>
 			<h3>TIM - Collège de Maisonneuve</h3>
 			<button class="bouton">Bomboclat</button>
 			<div class="liens">

@@ -13,13 +13,13 @@
 
 <body>
     <div id="menu" class="global">
-        <input type="checkbox" name="" id="chk-burger">
-        <label id="burger-bouton" for="chk-burger">
-            <svg id="burger" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </label>
         <header class="menu_header">
+            <input type="checkbox" name="" id="chk-burger">
+            <label id="burger-bouton" for="chk-burger">
+                <svg id="burger" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </label>
             <?php wp_nav_menu(array("container" => "nav")); ?>
         </header>
     </div>
