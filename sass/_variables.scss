@@ -20,11 +20,12 @@
 	// Couleurs monochromes
 
 	// Couleur arrière plan - Background color
+	--couleur-arriere-menu: hsl(var(--u1), 100%, 60%);
 	--couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
     --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
     // --couleur-arriere-evenement: hsl(var(--u1), 100%, 80%);
     // --couleur-arriere-galerie: hsl(var(--u1), 100%, 85%);
-    --couleur-arriere-footer: hsl(var(--u1), 100%, 70%);
+    --couleur-arriere-footer: hsl(var(--u1), 100%, 80%);
 
 	// Pour que la diagonale soit entièrement visible
 	--couleur-arriere-evenement: var(--couleur-arriere-accueil);

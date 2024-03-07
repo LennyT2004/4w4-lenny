@@ -6,7 +6,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: "Protest Guerrilla", sans-serif;
+	font-family: "Kode Mono", monospace;
 }
 
 .global {
@@ -50,7 +50,8 @@ p {
 }
 
 #menu {
-
+	// mettre un background avec var
+	background-color: var(--couleur-arriere-menu);
 }
 
 // Définition des background color

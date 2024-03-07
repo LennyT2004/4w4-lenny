@@ -9,14 +9,10 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
 <body>
-	<nav id="menu" class="global">
-		<header class="menu_header">
-			<?php wp_nav_menu(array("container" => "nav")); ?>
-		</header>
-	</nav>
+	<?php get_header(); ?>
 	<div id="entete" class="global">
 		<section class="entete_header">
 			<h1>Thème du groupe #1 (h1)</h1>
@@ -83,11 +79,7 @@
 				architecto nesciunt odit quos recusandae distinctio?
 			</p>
 		</section>
-		<div class="vague">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill: var(--couleur-arriere-footer);"></path>
-			</svg>
-		</div>
+		<!-- Vague -->
 	</div>
 	<div id="footer" class="global">
 		<footer>
