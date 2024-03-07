@@ -25,7 +25,7 @@
     --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
     // --couleur-arriere-evenement: hsl(var(--u1), 100%, 80%);
     // --couleur-arriere-galerie: hsl(var(--u1), 100%, 85%);
-    --couleur-arriere-footer: hsl(var(--u1), 100%, 80%);
+    --couleur-arriere-footer: hsl(var(--u1), 100%, 90%);
 
 	// Pour que la diagonale soit entièrement visible
 	--couleur-arriere-evenement: var(--couleur-arriere-accueil);
@@ -64,4 +64,12 @@
 
 .carte {
 	--_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+
+#entete {
+	--_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
+#galerie{
+	--_couleur-arriere-vague: var(--couleur-arriere-footer);
 }

@@ -21,7 +21,7 @@ Text Domain: theme-lenny
   --couleur-arriere-menu: hsl(var(--u1), 100%, 60%);
   --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
-  --couleur-arriere-footer: hsl(var(--u1), 100%, 80%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 90%);
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
   --couleur-entete: hsl(var(--u3), 100%, 30%);
@@ -39,6 +39,14 @@ Text Domain: theme-lenny
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
+#galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
 * {
@@ -79,7 +87,7 @@ section, footer {
 }
 
 p {
-  color: beige;
+  color: black;
   padding: 2rem;
   font-size: clamp(1rem, 0.773rem + 0.606vw, 1.5rem);
   font-style: italic;
@@ -260,6 +268,10 @@ span {
   display: block;
   width: calc(100% + 1.3px);
   height: 50px;
+}
+
+.vague .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonale {

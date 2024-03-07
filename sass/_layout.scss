@@ -42,7 +42,7 @@ section, footer {
 
 // Ajout d'un clamp pour le p
 p {
-	color: beige;
+	color: black;
 	padding: 2rem;
 	font-size: clamp(1rem, 0.773rem + 0.606vw, 1.5rem);
 	font-style: italic;
