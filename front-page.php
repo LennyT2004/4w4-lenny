@@ -13,6 +13,7 @@
 
 <body>
 	<?php get_header(); ?>
+	<h1>FRONT-PAGE.PHP</h1>
 	<div id="entete" class="global">
 		<section class="entete_header">
 			<h1>Thème du groupe #1 (h1)</h1>
@@ -41,8 +42,10 @@
 
 					while (have_posts()) : the_post();
 						$titre = get_the_title();
+						
 				?>
 						<div class="carte">
+							
 							<h3><?php echo $titre; ?></h3>
 							<p><?php echo get_the_content(); ?></p>
 						</div>
