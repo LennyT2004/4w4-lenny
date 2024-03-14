@@ -2,15 +2,15 @@
 
 ## Création d'un menu
 - Ajouter un menu permettant d'accéder
- - À vos cinq cours préférés
- - À chacune des sections de la page
-- Le menu doit être formaté en utilisant composant/_menu.scss Le menu doit être adaptatif et être amovible en version mobile.
+ - À 5 différents cours
+ - À chaque section de la page
+- Formatage du menu avec SCSS. Adaptation en desktop et mobile et affichage avec un burger checkbox
 
 ### Création d'un header.php
 - Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules de base
 
 ### Création d'un « template-part » (gabarit)
-- Créer un template-part qui permettra d'afficher les vagues
+- Créer un gabarit pour les vagues en php
 
 ## Barème de correction
 - Intégration de chacun des éléments précédents de façon structuré (1 point)
