@@ -14,6 +14,7 @@
 <body>
     <div id="menu" class="global">
         <header class="menu_header">
+            <?php echo get_custom_logo(); ?>
             <input type="checkbox" name="" id="chk-burger">
             <label id="burger-bouton" for="chk-burger">
                 <svg id="burger" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">

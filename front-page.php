@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thème du groupe #1</title>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-
-<body>
 	<?php get_header(); ?>
-	<h1>FRONT-PAGE.PHP</h1>
 	<div id="entete" class="global">
 		<section class="entete_header">
-			<h1>Thème du groupe #1 (h1)</h1>
-			<h2>4W4 - Conception d'interface et développement Web</h2>
+			<h1><?php echo get_bloginfo("name"); ?></h1>
+			<h2><?php echo get_bloginfo("description"); ?></h2>
 			<h3>TIM - Collège de Maisonneuve</h3>
 			<button class="bouton">Bomboclat</button>
 			<div class="liens">
@@ -39,15 +25,13 @@
 				<!-- Séparation des composants du sigle, titre du cours et durée -->
 				<?php
 				if (have_posts()) :
-
-					while (have_posts()) : the_post();
-						$titre = get_the_title();
-						
+				while (have_posts()) : the_post();
 				?>
 						<div class="carte">
 							
-							<h3><?php echo $titre; ?></h3>
-							<p><?php echo get_the_content(); ?></p>
+							<h3><?php the_title(); ?></h3>
+							<p><?php the_content(); ?></p>
+							<a href="<?php the_permalink() ?>">Suite</a>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
@@ -78,17 +62,4 @@
 		<!-- Vague -->
 		<?php get_template_part('gabarits/vague') ?>
 	</div>
-	<div id="footer" class="global">
-		<footer>
-			<h2>Footer (h2)</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-				Minima earum alias dignissimos. Amet beatae cumque vero
-				repellendus totam provident? Quae deleniti autem eum tempore
-				recusandae dolorum consequatur veniam facere enim.
-			</p>
-		</footer>
-	</div>
-</body>
-
-</html>
+<?php get_footer(); ?>
