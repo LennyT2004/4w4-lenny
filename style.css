@@ -209,7 +209,7 @@ span {
   text-decoration: underline;
 }
 
-.cours {
+.destinations {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -235,6 +235,12 @@ span {
   text-align: center;
   flex: 1 1 auto;
   flex-wrap: wrap;
+}
+
+.post-categories {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
 }
 
 .menu-principal-container {

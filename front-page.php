@@ -21,7 +21,7 @@
 	<div id="accueil" class="global">
 		<section>
 			<h2>Accueil (h2)</h2>
-			<div class="cours">
+			<div class="destinations">
 				<!-- Séparation des composants du sigle, titre du cours et durée -->
 				<?php
 				if (have_posts()) :
@@ -30,7 +30,8 @@
 						<div class="carte">
 							
 							<h3><?php the_title(); ?></h3>
-							<p><?php the_content(); ?></p>
+							<p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+							<?php the_category(); ?>
 							<a href="<?php the_permalink() ?>">Suite</a>
 						</div>
 					<?php endwhile; ?>
