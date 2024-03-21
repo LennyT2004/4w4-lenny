@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
 <body>
-    <div id="menu" class="global">
+    <div id="menu" class="global clr-agencement-primaire">
         <header class="menu_header">
             <?php echo get_custom_logo(); ?>
             <input type="checkbox" name="" id="chk-burger">

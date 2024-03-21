@@ -11,7 +11,11 @@ Text Domain: theme-lenny
 
 // https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
-@import "variables";
+// Initialisation des variables Sass et CSS
+
+@import "utile/couleurs";
+
+@import "utile/couleurs-class";
 
 @import "layout";
 

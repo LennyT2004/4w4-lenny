@@ -1,6 +1,6 @@
 // Feuille de style du menu principal
 .menu-principal-container {
-    transform: translateX(-100%);
+    transform: translateX(-250%);
     transition: transform 0.5s ease-in-out;
     @media (min-width: 768px) {
         transform: translateX(0);
@@ -21,11 +21,6 @@
     // li
     flex: 1 0 50px;
     list-style-type: none;
-}
-
-.menu-item-a {
-    // li a
-    color: black;
 }
 
 // Gestion label #burger, l'image svg est contenu dans un label

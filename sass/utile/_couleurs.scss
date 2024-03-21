@@ -1,0 +1,129 @@
+// Variables Sass
+
+// Palettes de couleur
+$--clr-bleu-pale : hsl(220, 100%, 85%);
+$--clr-bleu-leger : hsl(220, 100%, 60%);
+$--clr-bleu-moyen : hsl(220, 100%, 30%);
+$--clr-bleu-fonce : hsl(220, 100%, 15%);
+
+
+$--clr-orange-pale: hsl(40, 100%, 85%);
+$--clr-orange-leger : hsl(40, 100%, 50%);
+$--clr-orange-moyen : hsl(40, 100%, 30%);
+$--clr-orange-fonce : hsl(40, 100%, 15%);
+
+$--clr-rouge-pale: hsl(10, 100%, 85%);
+$--clr-rouge-leger : hsl(10, 100%, 50%);
+$--clr-rouge-moyen : hsl(10, 100%, 30%);
+$--clr-rouge-fonce : hsl(10, 100%, 15%);
+
+$--clr-vert-pale: hsl(70, 100%, 85%);
+$--clr-vert-leger : hsl(70, 100%, 50%);
+$--clr-vert-moyen : hsl(70, 100%, 30%);
+$--clr-vert-fonce : hsl(70, 100%, 15%);
+
+// À partir des variables de couleurs de la palette choisie
+// ou un mapping en catégorisant ls différentes couleurs
+// Ce map contient un map principal et plusieurs sous-map
+$defaut: (
+	primaire : (100: $--clr-bleu-pale,
+		200: $--clr-bleu-leger,
+		300: $--clr-bleu-moyen,
+		400: $--clr-bleu-fonce ),
+	secondaire : (100: $--clr-orange-pale,
+		200: $--clr-orange-leger,
+		300: $--clr-orange-moyen,
+		400: $--clr-orange-fonce ),
+	ternaire : (100: $--clr-rouge-pale,
+		200: $--clr-rouge-leger,
+		300: $--clr-rouge-moyen,
+		400: $--clr-rouge-fonce ),
+	vert : (100: $--clr-vert-pale,
+		200: $--clr-vert-leger,
+		300: $--clr-vert-moyen,
+		400: $--clr-vert-fonce )
+);
+
+// Agencement des couleurs
+$agencement-couleur :(
+    primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
+    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
+    vert: ($--clr-vert-fonce, $--clr-vert-pale)
+);
+
+:root {
+	// --couleur-arriere-entete: #e10b0b;
+	// --couleur-arriere-accueil: #faff18;
+	// --couleur-arriere-evenement: rgb(30 102 120);
+	// --couleur-arriere-galerie: #ffffff;
+	// --couleur-arriere-footer: #000;
+
+	// Calcul des teintes
+	--u1: 225; // couleur initiale
+	--u2: calc(var(--u1) + 180); // couleur complémentaire
+	--u3: calc(var(--u2) - 30); // couleur analogue gauche
+	--u4: calc(var(--u2) + 30); // couleur analogue droite
+
+	// Saturation et luminosité
+	--s-arriere: 100%;
+	--s-avant: 50%;
+	--l-arriere: 30%;
+	--l-avant: 20%;
+
+	// Couleurs monochromes
+
+	// Couleur arrière plan - Background color
+	--couleur-arriere-menu: hsl(var(--u1), 100%, 60%);
+	--couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
+	--couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+	// --couleur-arriere-evenement: hsl(var(--u1), 100%, 80%);
+	// --couleur-arriere-galerie: hsl(var(--u1), 100%, 85%);
+	--couleur-arriere-footer: hsl(var(--u1), 100%, 90%);
+
+	// Pour que la diagonale soit entièrement visible
+	--couleur-arriere-evenement: var(--couleur-arriere-accueil);
+	--couleur-arriere-galerie: var(--couleur-arriere-accueil);
+
+	// Couleur avant plan - Color
+	--couleur-entete: hsl(var(--u3), 100%, 30%);
+	--couleur-accueil: hsl(var(--u3), 100%, 35%);
+	--couleur-evenement: hsl(var(--u3), 100%, 35%);
+	--couleur-galerie: hsl(var(--u3), 100%, 35%);
+	--couleur-footer: hsl(var(--u3), 100%, 35%);
+
+	// Couleur bouton
+	--couleur-bouton-1: rgb(32, 23, 124);
+	--couleur-bouton-2: rgb(87, 83, 124);
+	--couleur-bouton-3: rgb(113, 113, 118);
+
+	// // Niveau de transparence des h
+	// --transparence-h1: 0.5;
+	// --transparence-h2: 0.45;
+	// --transparence-h3: 0.4;
+	// --transparence-h4: 0.35;
+	// --transparence-h5: 0.3;
+	// --transparence-h6: 0.25;
+
+	// // Niveau de transparence des sections
+	// --transparence-section: 0.1;
+
+	// Largeur des zones centrales
+	--largeur-header: 90vw;
+	--largeur-section: 75vw;
+	--largeur-footer: 50vw;
+
+	// --_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+
+.carte {
+	--_couleur-arriere: hsl(var(--u1), 100%, 85%);
+}
+
+#entete {
+	--_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
+#galerie {
+	--_couleur-arriere-vague: var(--couleur-arriere-footer);
+}
