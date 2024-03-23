@@ -1,26 +1,24 @@
-# Labo #4
+# TP1 - Club de voyage
 
-## Création d'un menu
-- Ajouter un menu permettant d'accéder
- - À 5 différents cours
- - À chaque section de la page
-- Formatage du menu avec SCSS. Adaptation en desktop et mobile et affichage avec un burger checkbox
+# Exercice 2 (5 points)
 
-### Création d'un header.php
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules de base
+- Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
 
-### Création d'un « template-part » (gabarit)
-- Créer un gabarit pour les vagues en php
+- Amélioration de la page d'accueil (front-page.php) (1 point)
+    - Changer le titre et la description générale du site 
+    - Chaque destination contient les catégories associées. 
+    - On voit uniquement les destinations « populaire »
+    - Améliorer l'apparence de la liste des catégories 
+    - Améliorer l'apparence de chacune des cartes 
+    
+- Afficher des cartes de catégories pour l'ensemble des catégories dans la page d'accueil   (2 points) 
+    - Titre de la catégorie
+    - 10 premiers mot de la description
+    - Un lien permet d'accéder à la liste des destinations de cette catégorie
+    - Le nombre d'article pour cette catégorie
 
-## Barème de correction
-- Intégration de chacun des éléments précédents de façon structuré (1 point)
-- Création d'une github-page à partir de index.htm
-- Création du readme.md avec :
- - Le nom de l'auteur
- - Un résumé des étapes du labo-4
- - Un lien vers votre github-page
- - Production de 5 commits
-- Design général de la page (1 point)
-
-### Lien page github
-https://lennyt2004.github.io/4w4-lenny/
+- Créer un readme    (1 point)
+    - Créer une github-page : mettre à jour index.htm 
+    - Ajouter l'adresse de la github-page dans votre readme.
+    - Le non de l'auteur
+    - Courte description de votre tp1
