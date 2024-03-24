@@ -24,8 +24,7 @@
 			<!-- Séparation des composants du sigle, titre du cours et durée -->
 			<?php
 			$args = array(
-				'category_name' => 'Populaire', // replace with your category slug
-				'posts_per_page' => 100, // adjust as needed
+				'category_name' => 'Populaire'
 			);
 			$query = new WP_Query($args);
 			if ($query->have_posts()) :

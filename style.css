@@ -205,7 +205,7 @@ Text Domain: theme-lenny
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Kode Mono", monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 .global {
@@ -236,6 +236,11 @@ p {
   font-size: clamp(1rem, 0.773rem + 0.606vw, 1.5rem);
   font-style: italic;
   margin-top: 2rem;
+}
+
+.carte a {
+  text-decoration: none;
+  color: hsl(220, 100%, 15%);
 }
 
 #menu {
@@ -430,6 +435,7 @@ span {
 
 #menu .menu_header nav a {
   text-decoration: none;
+  color: hsl(220, 100%, 15%);
 }
 
 #burger {
