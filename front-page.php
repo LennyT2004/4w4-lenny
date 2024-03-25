@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="entete" class="global">
+<div id="entete" class="global clr-agencement-primaire">
 	<section class="entete_header">
 		<h1><?php echo get_bloginfo("name"); ?></h1>
 		<h2><?php echo get_bloginfo("description"); ?></h2>
@@ -34,24 +34,29 @@
 						<h3><?php the_title(); ?></h3>
 						<p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
 						<?php the_category(); ?>
-						<a href="<?php the_permalink() ?>">Suite</a>
+						<a href="<?php the_permalink() ?>">Voir la description</a>
 					</div>
 				<?php endwhile; ?>
-				<?php wp_reset_postdata(); // reset the query 
+				<?php wp_reset_postdata();
 				?>
 			<?php endif; ?>
 		</div>
 	</section>
 </div>
-<div id="evenement" class="global diagonale">
+<div id="categories" class="global diagonale">
 	<section>
-		<h2>Évènement (h2)</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Perferendis illum numquam quibusdam quas accusamus obcaecati
-			ullam perspiciatis minima soluta, ipsam quae rerum alias
-			delectus accusantium nobis error. Facere, obcaecati rem.
-		</p>
+		<h2>Catégories (h2)</h2>
+		<div class="categories">
+			<?php
+			$categories = get_categories();
+			foreach ($categories as $categorie) : ?>
+				<div class="carte">
+					<h3><?php echo $categorie->name; ?></h3>
+					<p><?php echo wp_trim_words($categorie->description, 30); ?></p>
+					<a href="<?php echo get_category_link($categorie->term_id); ?>">Voir les destinations</a>
+				</div>
+			<?php endforeach; ?>
+		</div>
 	</section>
 </div>
 <div id="galerie" class="global">

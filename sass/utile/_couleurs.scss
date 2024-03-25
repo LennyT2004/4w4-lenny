@@ -1,16 +1,17 @@
 // Variables Sass
 
+// Texte
+$--clr-texte-blanc : hsl(90, 10%, 10%);
 // Palettes de couleur
-$--clr-bleu-pale : hsl(220, 100%, 85%);
+$--clr-bleu-fonce : hsl(220, 100%, 40%);
+$--clr-bleu-moyen : hsl(220, 100%, 50%);
 $--clr-bleu-leger : hsl(220, 100%, 60%);
-$--clr-bleu-moyen : hsl(220, 100%, 30%);
-$--clr-bleu-fonce : hsl(220, 100%, 15%);
+$--clr-bleu-pale : hsl(220, 100%, 70%);
 
-
-$--clr-orange-pale: hsl(40, 100%, 85%);
+$--clr-orange-fonce: hsl(40, 100%, 30%);
+$--clr-orange-moyen : hsl(40, 100%, 40%);
 $--clr-orange-leger : hsl(40, 100%, 50%);
-$--clr-orange-moyen : hsl(40, 100%, 30%);
-$--clr-orange-fonce : hsl(40, 100%, 15%);
+$--clr-orange-pale : hsl(40, 100%, 60%);
 
 $--clr-rouge-pale: hsl(10, 100%, 85%);
 $--clr-rouge-leger : hsl(10, 100%, 50%);
@@ -45,12 +46,10 @@ $defaut: (
 );
 
 // Agencement des couleurs
-$agencement-couleur :(
-    primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
-    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
-    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
-    vert: ($--clr-vert-fonce, $--clr-vert-pale)
-);
+$agencement-couleur :(primaire: ($--clr-orange-fonce, $--clr-orange-moyen, $--clr-orange-pale),
+	secondaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+	tertiaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
+	vert: ($--clr-vert-fonce, $--clr-vert-pale));
 
 :root {
 	// --couleur-arriere-entete: #e10b0b;
@@ -82,13 +81,13 @@ $agencement-couleur :(
 	--couleur-arriere-footer: hsl(var(--u1), 100%, 90%);
 
 	// Pour que la diagonale soit entièrement visible
-	--couleur-arriere-evenement: var(--couleur-arriere-accueil);
+	--couleur-arriere-categories: var(--couleur-arriere-accueil);
 	--couleur-arriere-galerie: var(--couleur-arriere-accueil);
 
 	// Couleur avant plan - Color
 	--couleur-entete: hsl(var(--u3), 100%, 30%);
 	--couleur-accueil: hsl(var(--u3), 100%, 35%);
-	--couleur-evenement: hsl(var(--u3), 100%, 35%);
+	--couleur-categories: hsl(var(--u3), 100%, 35%);
 	--couleur-galerie: hsl(var(--u3), 100%, 35%);
 	--couleur-footer: hsl(var(--u3), 100%, 35%);
 

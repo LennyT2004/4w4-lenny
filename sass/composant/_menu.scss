@@ -37,7 +37,11 @@
 
 #menu .menu_header nav a {
     text-decoration: none;
-    color: $--clr-bleu-fonce;
+    color: $--clr-orange-leger;
+}
+
+#menu .menu_header nav a:hover {
+    text-decoration: underline;
 }
 
 // Gestion label #burger, l'image svg est contenu dans un label

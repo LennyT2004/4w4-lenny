@@ -1,4 +1,4 @@
-.destinations {
+.destinations, .categories {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -20,6 +20,15 @@
 .carte p {
 	text-align: center;
 	flex-wrap: wrap;
+}
+
+.carte a {
+	text-decoration: none;
+    color: $--clr-orange-fonce;
+}
+
+.carte a:hover {
+	text-decoration: underline;
 }
 
 .carte h3 {

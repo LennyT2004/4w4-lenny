@@ -22,11 +22,11 @@ Text Domain: theme-lenny
   --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
   --couleur-arriere-footer: hsl(var(--u1), 100%, 90%);
-  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-categories: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
   --couleur-entete: hsl(var(--u3), 100%, 30%);
   --couleur-accueil: hsl(var(--u3), 100%, 35%);
-  --couleur-evenement: hsl(var(--u3), 100%, 35%);
+  --couleur-categories: hsl(var(--u3), 100%, 35%);
   --couleur-galerie: hsl(var(--u3), 100%, 35%);
   --couleur-footer: hsl(var(--u3), 100%, 35%);
   --couleur-bouton-1: rgb(32, 23, 124);
@@ -50,11 +50,11 @@ Text Domain: theme-lenny
 }
 
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(220, 100%, 70%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(220, 100%, 70%);
 }
 
 .clr-primaire-200 {
@@ -66,27 +66,27 @@ Text Domain: theme-lenny
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(220, 100%, 50%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(220, 100%, 50%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(220, 100%, 40%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(220, 100%, 40%);
 }
 
 .clr-secondaire-100 {
-  color: hsl(40, 100%, 85%);
+  color: hsl(40, 100%, 60%);
 }
 
 .bck-secondaire-100 {
-  background-color: hsl(40, 100%, 85%);
+  background-color: hsl(40, 100%, 60%);
 }
 
 .clr-secondaire-200 {
@@ -98,19 +98,19 @@ Text Domain: theme-lenny
 }
 
 .clr-secondaire-300 {
-  color: hsl(40, 100%, 30%);
+  color: hsl(40, 100%, 40%);
 }
 
 .bck-secondaire-300 {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(40, 100%, 40%);
 }
 
 .clr-secondaire-400 {
-  color: hsl(40, 100%, 15%);
+  color: hsl(40, 100%, 30%);
 }
 
 .bck-secondaire-400 {
-  background-color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 30%);
 }
 
 .clr-ternaire-100 {
@@ -178,23 +178,23 @@ Text Domain: theme-lenny
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(40, 100%, 30%);
+  background-image: linear-gradient(90deg, hsl(40, 100%, 30%), hsl(40, 100%, 40%), hsl(40, 100%, 60%));
 }
 
 .clr-agencement-secondaire {
-  color: hsl(40, 100%, 15%);
-  background-color: hsl(40, 100%, 85%);
+  color: hsl(220, 100%, 40%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 40%), hsl(220, 100%, 70%), hsl(220, 100%, 60%));
 }
 
-.clr-agencement-ternaire {
+.clr-agencement-tertiaire {
   color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
+  background-image: linear-gradient(90deg, hsl(10, 100%, 15%), hsl(10, 100%, 85%));
 }
 
 .clr-agencement-vert {
   color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
+  background-image: linear-gradient(90deg, hsl(70, 100%, 15%), hsl(70, 100%, 85%));
 }
 
 * {
@@ -238,45 +238,40 @@ p {
   margin-top: 2rem;
 }
 
-.carte a {
-  text-decoration: none;
-  color: hsl(220, 100%, 15%);
-}
-
 #menu {
+  color: hsl(90, 10%, 10%);
   position: relative;
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
-  color: var(--couleur-entete);
+  color: hsl(90, 10%, 10%);
   position: relative;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-accueil);
+  color: hsl(90, 10%, 10%);
 }
 
-#evenement {
+#categories {
   background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-evenement);
+  color: hsl(90, 10%, 10%);
   z-index: 1;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-galerie);
+  color: hsl(90, 10%, 10%);
   position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-footer);
+  color: hsl(90, 10%, 10%);
 }
 
 .entete_header {
-  background-image: url("images/wordpress-theme.png");
+  background-image: url("images/logo-avion-bg.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -314,7 +309,6 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   text-decoration: underline overline;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 h2 {
@@ -361,7 +355,7 @@ span {
   text-decoration: underline;
 }
 
-.destinations {
+.destinations, .categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -381,6 +375,15 @@ span {
 .carte p {
   text-align: center;
   flex-wrap: wrap;
+}
+
+.carte a {
+  text-decoration: none;
+  color: hsl(40, 100%, 30%);
+}
+
+.carte a:hover {
+  text-decoration: underline;
 }
 
 .carte h3 {
@@ -435,7 +438,11 @@ span {
 
 #menu .menu_header nav a {
   text-decoration: none;
-  color: hsl(220, 100%, 15%);
+  color: hsl(40, 100%, 50%);
+}
+
+#menu .menu_header nav a:hover {
+  text-decoration: underline;
 }
 
 #burger {

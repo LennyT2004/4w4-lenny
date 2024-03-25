@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <body>
-    <div id="menu" class="global clr-agencement-primaire">
+    <div id="menu" class="global clr-agencement-secondaire">
         <header class="menu_header">
             <?php echo get_custom_logo(); ?>
             <input type="checkbox" name="" id="chk-burger">

@@ -46,38 +46,33 @@ p {
 	margin-top: 2rem;
 }
 
-.carte a {
-	text-decoration: none;
-    color: $--clr-bleu-fonce;
-}
-
 #menu {
+	color: $--clr-texte-blanc;
 	position: relative;
 }
 
 // Définition des background color
 #entete {
-	background-color: var(--couleur-arriere-entete);
-	color: var(--couleur-entete);
+	color: $--clr-texte-blanc;
 	position: relative;
 }
 #accueil {
 	background-color: var(--couleur-arriere-accueil);
-	color: var(--couleur-accueil);
+	color: $--clr-texte-blanc;
 }
-#evenement {
+#categories {
 	background-color: var(--couleur-arriere-accueil);
-	color: var(--couleur-evenement);
+	color: $--clr-texte-blanc;
 	z-index: 1;
 }
 #galerie {
 	background-color: var(--couleur-arriere-galerie);
-	color: var(--couleur-galerie);
+	color: $--clr-texte-blanc;
 	position: relative;
 }
 #footer {
 	background-color: var(--couleur-arriere-footer);
-	color: var(--couleur-footer);
+	color: $--clr-texte-blanc;
 }
 
 // @media screen and (max-width: 768px) {
