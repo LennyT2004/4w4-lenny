@@ -57,21 +57,21 @@ p {
 	position: relative;
 }
 #accueil {
-	background-color: var(--couleur-arriere-accueil);
+	background-color: $--clr-bleu-fonce;
 	color: $--clr-texte-blanc;
 }
 #categories {
-	background-color: var(--couleur-arriere-accueil);
+	background-color: $--clr-bleu-fonce;
 	color: $--clr-texte-blanc;
 	z-index: 1;
 }
 #galerie {
-	background-color: var(--couleur-arriere-galerie);
+	background-color: $--clr-bleu-fonce;
 	color: $--clr-texte-blanc;
 	position: relative;
 }
 #footer {
-	background-color: var(--couleur-arriere-footer);
+	background-color: $--clr-bleu-pale;
 	color: $--clr-texte-blanc;
 }
 

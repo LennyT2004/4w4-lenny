@@ -4,9 +4,9 @@
 		<h1><?php echo get_bloginfo("name"); ?></h1>
 		<h2><?php echo get_bloginfo("description"); ?></h2>
 		<h3>TIM - Collège de Maisonneuve</h3>
-		<button class="bouton">Bomboclat</button>
+		<a href="#categories" class="bouton">Catégories</a>
 		<div class="liens">
-			<a href="#evenement" class="lien-section">Évènement</a>
+			<a href="#accueil" class="lien-section">Destinations</a>
 			<a href="#footer" class="lien-section">Footer</a>
 		</div>
 	</section>
@@ -52,7 +52,8 @@
 			foreach ($categories as $categorie) : ?>
 				<div class="carte">
 					<h3><?php echo $categorie->name; ?></h3>
-					<p><?php echo wp_trim_words($categorie->description, 30); ?></p>
+					<p><?php echo wp_trim_words($categorie->description, 10); ?></p>
+					<p>Nombre de destinations: <?php echo $categorie->category_count; ?></p>
 					<a href="<?php echo get_category_link($categorie->term_id); ?>">Voir les destinations</a>
 				</div>
 			<?php endforeach; ?>

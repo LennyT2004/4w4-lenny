@@ -1,12 +1,13 @@
 // Variables Sass
 
 // Texte
-$--clr-texte-blanc : hsl(90, 10%, 10%);
+$--clr-texte-blanc : hsl(85, 21%, 84%);
 // Palettes de couleur
-$--clr-bleu-fonce : hsl(220, 100%, 40%);
-$--clr-bleu-moyen : hsl(220, 100%, 50%);
-$--clr-bleu-leger : hsl(220, 100%, 60%);
-$--clr-bleu-pale : hsl(220, 100%, 70%);
+$--clr-bleu-fonce : hsl(220, 100%, 20%);
+$--clr-bleu-moyen : hsl(220, 100%, 30%);
+$--clr-bleu-leger : hsl(220, 100%, 40%);
+$--clr-bleu-pale : hsl(220, 100%, 50%);
+$--clr-bleu-tres-pale : hsl(220, 100%, 60%);
 
 $--clr-orange-fonce: hsl(40, 100%, 30%);
 $--clr-orange-moyen : hsl(40, 100%, 40%);
@@ -120,9 +121,9 @@ $agencement-couleur :(primaire: ($--clr-orange-fonce, $--clr-orange-moyen, $--cl
 }
 
 #entete {
-	--_couleur-arriere-vague: var(--couleur-arriere-accueil);
+	--_couleur-arriere-vague: hsl(220, 100%, 20%);
 }
 
 #galerie {
-	--_couleur-arriere-vague: var(--couleur-arriere-footer);
+	--_couleur-arriere-vague: hsl(220, 100%, 50%);
 }
